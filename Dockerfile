@@ -7,6 +7,6 @@ ENV STEAMAPPDIR /home/steam/starbound-dedicated
 
 WORKDIR $STEAMAPPDIR
 
-ENTRYPOINT ${STEAMAPPDIR}/linux/run-server.sh
+ENTRYPOINT ${STEAMAPPDIR}/linux/starbound_server
 
 EXPOSE 21025/tcp
