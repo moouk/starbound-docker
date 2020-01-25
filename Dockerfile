@@ -5,4 +5,8 @@ FROM debian:buster-slim
 
 ENV STEAMAPPDIR /home/steam/starbound-dedicated
 
+WORKDIR $STEAMAPPDIR
+
 ENTRYPOINT ${STEAMAPPDIR}/linux/run-server.sh
+
+EXPOSE 21025/tcp
